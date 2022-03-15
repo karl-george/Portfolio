@@ -38,8 +38,8 @@ p {
 
 .bg-primary {
   background-color: var(--main-bg-colour);
-  height: 100vh;
   width: 100%;
+  height: 100vh;
 }
 
 .bg-secondary {
@@ -62,6 +62,18 @@ a {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-2-left-large {
+  grid-template-columns: 1fr 100px;
 }
 
 /* Navbar */
@@ -96,5 +108,41 @@ nav {
   color: #c6cee7;
 }
 
-
 /* Hero */
+.hero {
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.hero-title {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.hero-content {
+  font-size: 3.6rem;
+  color: var(--accent);
+}
+
+.hero-socials {
+  font-size: 7rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.hero-social-icon {
+  color: #fff;
+  margin-top: 6rem;
+}
+
+.down-arrow {
+  font-size: 4rem;
+  background-color: var(--accent);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
