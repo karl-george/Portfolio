@@ -204,7 +204,7 @@ img {
 
 .email-me {
   text-align: center;
-  margin-bottom: 12rem;
+  margin-bottom: 14rem;
 }
 
 .email-link {
@@ -218,4 +218,39 @@ img {
 
 .email-link:hover {
   background-color: var(--accent);
+}
+
+/* Footer */
+footer {
+  background-color: var(--main-bg-colour);
+  padding: 4rem 0;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.footer-section p {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.footer-socials {
+  font-size: 4rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-social-icon {
+  color: #fff;
+  margin-right: 4rem;
+}
+
+.footer-social-icon:hover {
+  color: var(--accent);
 }
