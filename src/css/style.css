@@ -2,7 +2,6 @@
 
 :root {
   --main-bg-colour: #1e2749;
-  --secondary-bg-colour: #fafaff;
   --accent: #8892b0;
   --text-accent: #30343f;
 }
@@ -43,7 +42,6 @@ p {
 }
 
 .bg-secondary {
-  background-color: var(--main-bg-colour);
   height: 100vh;
   width: 100%;
 }
@@ -74,6 +72,11 @@ a {
 
 .grid-cols-2-left-large {
   grid-template-columns: 1fr 100px;
+}
+
+.grid-2x2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 /* Navbar */
@@ -137,6 +140,10 @@ nav {
   margin-top: 6rem;
 }
 
+.hero-social-icon:hover {
+  color: var(--accent);
+}
+
 .down-arrow {
   font-size: 4rem;
   background-color: var(--accent);
@@ -145,4 +152,27 @@ nav {
   height: 40px;
   margin: 0 auto;
   border-radius: 50%;
+}
+
+/* Projects */
+.section-title {
+  font-size: 4.8rem;
+  text-align: center;
+  padding: 7rem 0;
+}
+
+.project-container {
+  margin: 0 auto;
+  text-align: center;
+  gap: 2.5rem;
+  margin-bottom: 7rem;
+  width: 70%;
+}
+
+img {
+  width: 100%;
+}
+
+.project-card img {
+  border: 1px solid black;
 }
