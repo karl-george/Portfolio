@@ -165,9 +165,14 @@ nav {
 .project-container {
   margin: 0 auto;
   text-align: center;
-  gap: 2.5rem;
+  gap: 5rem 2.5rem;
   margin-bottom: 18rem;
   width: 90%;
+}
+
+.project-card {
+  box-shadow: 12px 12px 3px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .project-img {
@@ -177,12 +182,12 @@ nav {
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
   transition: 0.8s;
+  border-radius: 10px;
 }
 
 .project-img:hover {
-  box-shadow: 0 0 0 250px rgba(30, 39, 73, 0.8) inset;
+  box-shadow: 0 0 0 250px rgba(30, 39, 73, 0.9) inset;
 }
 
 .hidden-info {
@@ -192,6 +197,35 @@ nav {
   color: #fff;
 }
 
+.hidden-info h3 {
+  font-size: 3rem;
+  margin-top: 9rem;
+}
+
+.hidden-info p {
+  font-size: 2rem;
+  width: 80%;
+  margin: 0 auto 3rem;
+}
+
+.hidden-info p:nth-child(3) {
+  margin-bottom: 6rem;
+  color: var(--accent);
+}
+
+.visit-site {
+  font-size: 2rem;
+  color: white;
+  background-color: var(--accent);
+  width: 300px;
+  padding: 2rem 2rem;
+  border-radius: 20px;
+}
+
+.visit-site:hover {
+  background-color: var(--text-accent);
+}
+
 .project-img:hover .hidden-info {
   opacity: 1;
   transform: scale(1);
@@ -199,6 +233,18 @@ nav {
 
 .img-1 {
   background-image: url('../img/fregg.png');
+}
+
+.img-2 {
+  background-image: url('../img/chatapp.png');
+}
+
+.img-3 {
+  background-image: url('../img/maxroll.png');
+}
+
+.img-4 {
+  background-image: url('../img/cakejoey.png');
 }
 
 img {
