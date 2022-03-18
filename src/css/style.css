@@ -58,6 +58,7 @@ a {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 8rem;
 }
 
 .grid {
@@ -251,6 +252,39 @@ img {
   width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  .project-container {
+    gap: 3rem 2.5rem;
+    width: 100%;
+  }
+
+  .project-img {
+    height: 350px;
+  }
+
+  .hidden-info h3 {
+    font-size: 2.5rem;
+    margin: 3rem auto 0;
+    width: 80%;
+  }
+
+  .hidden-info p {
+    font-size: 1.8rem;
+    margin: 0 auto 3rem;
+  }
+
+  .visit-site {
+    font-size: 1.8rem;
+    width: 250px;
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+
+}
+
 /* Skills */
 .title-light {
   color: var(--accent);
@@ -280,6 +314,22 @@ img {
   font-size: 2rem;
   text-align: center;
   color: var(--accent);
+}
+
+@media screen and (max-width: 1024px) {
+  .skills-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+
+  .skill-item img {
+    width: 80px;
+  }
+
+  .skill-item p {
+    font-size: 1.8rem;
+  }
 }
 
 /* Contact */
